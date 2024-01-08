@@ -1,7 +1,8 @@
-const PersonDetails = (props) => {
+const PersonDetails = (props) => {    
     return (
         <div>
             {props.name} {props.number}
+            <button onClick={props.deletePerson}>X</button>
         </div>
     )
 }
@@ -11,7 +12,7 @@ const Persons = (props) => {
         <div>
             {
                 props.persons.map(person =>
-                    <PersonDetails key={person.name} name={person.name} number={person.number}/>
+                    <PersonDetails key={person.name} name={person.name} number={person.number} deletePerson={() => props.deletePerson(person.id)} />
                 )
             }
         </div>
