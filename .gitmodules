@@ -1,3 +1,6 @@
 [submodule "part3"]
 	path = part3
 	url = https://github.com/Ezioness/fullstack-open-backend
+[submodule "part4"]
+	path = part4
+	url = https://github.com/Ezioness/fullstackopen-bloglist-backend.git
